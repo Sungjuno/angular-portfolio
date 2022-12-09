@@ -1,0 +1,60 @@
+.secao-projetos-titulo{
+  text-align: center;
+  font-size: 2.7rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.secao-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.solo-border{
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(229, 149, 58);
+  margin-top: -3rem;
+}
+
+.projeto-cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  box-shadow:0px 6px 64px rgba(112, 144, 176, 0.1);
+  width: 62rem;
+  border-radius: 24px;
+}
+
+.projeto-gerenciador{
+  width: 35rem;
+  border-radius: 24px;
+  margin-bottom: -0.3rem;
+}
+
+.card-descricao{
+  width: 20rem;
+  padding-left: 5rem;
+  line-height: 1.8rem;
+  color: #828282;
+}
+
+.card-titulo{
+  padding-left: 5rem;
+}
+
+.card-link{
+  border: 2px solid #828282;
+  text-decoration: none;
+  margin-left: 5rem;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.card-link:active{
+  background-color: black;
+}

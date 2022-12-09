@@ -1,0 +1,64 @@
+.pre-intro{
+  padding-top: 2rem;
+  padding-left: 7.5rem;
+  color:  rgb(229, 149, 58);
+}
+
+.home{
+  margin-bottom: 8rem;
+}
+
+.intro{
+  padding-left: 7.5rem;
+  font-size: 3rem;
+  width: 30rem;
+  height: 5rem;
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 3rem;
+}
+
+.intro-descricao{
+  padding-left: 7.5rem;
+  padding-bottom: 1.5rem;
+  width: 30rem;
+  color: #656565;
+  line-height: 2.5rem;
+}
+.botoes{
+  display: flex;
+  gap: 1.5rem;
+  padding-left: 7.5rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+.botao{
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.botao:active{
+  background-color: black;
+  border: 2.2px solid black;
+}
+
+.botao-cheio{
+  background-color:  rgb(229, 149, 58);
+  font-size: 1rem;
+}
+
+.botao-vazio{
+  border: 2.2px solid rgb(229, 149, 58);
+  color:  rgb(201, 130, 49);
+  background-color: transparent;
+}
+
+
+.secao-projetos{
+  margin-top: 5rem;
+  padding-left: 7.5rem;
+}
