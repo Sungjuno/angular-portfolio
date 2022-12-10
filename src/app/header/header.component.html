@@ -1,8 +1,14 @@
-<nav class="header">
-  <li><a href=""></a>Sung Ju No</li>
-  <ul>
-    <li><a href=""></a>Sobre</li>
-    <li><a href=""></a>Projetos</li>
-    <li><a href=""></a>Contato</li>
-  </ul>
-</nav>
+<div class="header-div">
+  <nav class="header">
+    <div class="background" id="back">
+      <a (click)="topFunction()" id="cor-titulo">Sung Ju No</a>
+    </div>
+    <div>
+      <ul class="background" id="back1">
+        <a (click)="topFunction()" id="cor-titulo1"><li>Sobre</li></a>
+        <a (click)="projetosClick('projetos')" id="cor-titulo2"><li>Projetos</li></a>
+        <a (click)="projetosClick('contato')" id="cor-titulo3"><li>Contato</li></a>
+      </ul>
+    </div>
+  </nav>
+</div>

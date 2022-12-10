@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
 body{
-  background-color: #E8ECF4;
+  background-color: #08090a;
   margin: 0;
   font-family: 'Comfortaa', cursive;
+}
+html {
+  scroll-behavior: smooth;
 }

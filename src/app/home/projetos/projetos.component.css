@@ -2,6 +2,7 @@
   text-align: center;
   font-size: 2.7rem;
   font-family: 'Playfair Display', serif;
+  color: #f4f7f5;
 }
 
 .secao-card{
@@ -53,8 +54,25 @@
   height: 3rem;
   border-radius: 10px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .card-link:active{
   background-color: black;
+}
+
+.tec-div{
+  padding-left: 4.5rem;
+}
+
+.tec{
+  padding-left: .5rem;
+  padding-top: 1.5rem;
+  width: 2.5rem;
+}
+
+.processing-img{
+  width: 35rem;
+  border-radius: 24px;
+  margin-bottom: -0.3rem;
 }
