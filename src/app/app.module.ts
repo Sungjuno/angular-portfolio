@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { ProjetosComponent } from './home/projetos/projetos.component';
 import { ContatoComponent } from './home/contato/contato.component';
+import { AboutComponent } from './home/about/about.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ContatoComponent } from './home/contato/contato.component';
     HomeComponent,
     HeaderComponent,
     ProjetosComponent,
-    ContatoComponent
+    ContatoComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

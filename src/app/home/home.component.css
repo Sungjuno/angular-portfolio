@@ -5,7 +5,9 @@
 }
 
 .home{
+  margin-top: 1.4rem;
   margin-bottom: 8rem;
+  display: flex;
 }
 
 .intro{
@@ -62,3 +64,74 @@ a{
 .secao-projetos{
   margin-top: 5rem;
 }
+
+.cropped {
+  height: 110%;
+  }
+
+  .secao{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/sung.jpg);
+    background-color: rgb(221,221,221);
+    background-position: 130% 50%;
+    background-repeat: no-repeat;
+  }
+  .opc{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 1rem;
+    margin-left: 19rem;
+    padding-top: 6rem;
+  }
+  a{
+    font-size: 10rem;
+    text-decoration: none;
+    cursor: pointer;
+    color:rgb(45, 45, 45);
+
+  }
+  p{
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  .nome-opc:hover a p.new-sobre span{
+    position: absolute;
+    padding-left: .5rem;
+    transition: 0.1s ;
+    opacity: 0;
+  }
+  .nome-opc:hover a p.new-sobre:after{
+    transition: .3s;
+    content: 'SOBRE';
+    color: whitesmoke;
+  }
+
+
+
+  .nome-opc1:hover a p.new-projeto span{
+    position: absolute;
+    padding-left: .5rem;
+    transition: 0.1s ;
+    opacity: 0;
+  }
+  .nome-opc1:hover a p.new-projeto:after{
+    content: 'PROJETOS';
+    color: whitesmoke;
+  }
+
+
+  .nome-opc2:hover a p.new-contato span{
+    position: absolute;
+    padding-left: .5rem;
+    transition: 0.1s ;
+    opacity: 0;
+  }
+  .nome-opc2:hover a p.new-contato:after{
+    content: 'CONTATO';
+    color: whitesmoke;
+  }

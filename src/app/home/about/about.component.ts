@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-contato',
-  templateUrl: './contato.component.html',
-  styleUrls: ['./contato.component.css'],
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css'],
   animations:[trigger('fadeIn',[
     transition(':enter',[
       style({
@@ -14,7 +14,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
     ])
   ])]
 })
-export class ContatoComponent implements OnInit {
+export class AboutComponent implements OnInit {
 
   constructor() { }
 
