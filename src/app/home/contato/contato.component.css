@@ -1,8 +1,11 @@
+div{
+  margin-top: 2rem;
+}
+
 .secao-projetos-titulo{
-  /* text-align: center; */
   font-size: 5rem;
   color: black;
-  padding: 14rem 0 2rem 0;
+  padding: 12rem 0 2rem 0;
   width: 50rem;
   line-height: 5.4rem;
   margin-bottom: 12rem;
@@ -13,21 +16,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.sung{
-  position: fixed;
-  font-size:1.2rem;
-  text-decoration: none;
-  margin-left: 80%;
-  margin-top: 3rem;
-  color: black;
-  padding: .5rem;
-  border-radius: 10px;
-}
-.sung:hover{
-  transition: .3s;
-  box-shadow: 3px 3px 3px black;
 }
 
 .contato-desc-titulo{

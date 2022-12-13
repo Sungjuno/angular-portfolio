@@ -104,14 +104,19 @@ a{
     padding-left: .5rem;
     transition: 0.1s ;
     opacity: 0;
+
   }
   .nome-opc:hover a p.new-sobre:after{
     transition: .3s;
     content: 'SOBRE';
     color: whitesmoke;
+    animation:  fadein .3s;
   }
 
-
+  @keyframes fadein {
+    from{ opacity: 0}
+    to{ opacity: 1}
+  }
 
   .nome-opc1:hover a p.new-projeto span{
     position: absolute;
@@ -122,6 +127,7 @@ a{
   .nome-opc1:hover a p.new-projeto:after{
     content: 'PROJETOS';
     color: whitesmoke;
+    animation:  fadein .3s;
   }
 
 
@@ -134,4 +140,5 @@ a{
   .nome-opc2:hover a p.new-contato:after{
     content: 'CONTATO';
     color: whitesmoke;
+    animation:  fadein .3s;
   }
