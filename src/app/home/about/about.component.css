@@ -1,27 +1,33 @@
-/* a{
-  position: fixed;
-  text-decoration: none;
-  margin-left: 80%;
-  font-size:1.2rem;
-  margin-top: -7rem;
-  color: black;
-  padding: .5rem;
-  border-radius: 10px;
-}
-a:hover{
-  transition: .3s;
-  box-shadow: 3px 3px 3px black;
-} */
 
+div{
+  margin-top:3rem;
+}
+.texto{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
 h1{
-  padding-top: 10rem;
-  margin-left: 15rem;
+  padding-top: 6rem;
+  margin-right: 40%;
   font-size: 3rem;
 }
 
 p{
-  width: 50%;
-  margin-top: 5rem;
-  margin-left: 20rem;
+  width: 45%;
+  margin-top: 2rem;
+  /* margin-left: 20rem; */
   font-size: 1.7rem;
+}
+
+@media (max-width: 480px){
+  p{
+    width:80%;
+    font-size: 1.2rem;
+    line-height: 1.8rem
+  }
+  .botao-sung{
+    margin-right:1rem;
+  }
 }

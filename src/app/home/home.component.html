@@ -22,18 +22,24 @@
 </section> -->
 
 <section class="secao" >
-  <div class="opc">
-    <div class="nome-opc" @init >
-      <a routerLink="/about">
-        <p class="new-sobre"><span>SUNG</span></p></a>
+  <div class="opc" [ngClass]="diminui ? 'opc-novo-size':'' ">
+    <div class="nome-opc" [@init]="reset" >
+      <a routerLink="/about" [ngClass]="diminui ? 'diminui-size' : '' ">
+        <p class="new-sobre"><span>{{nome1}}</span></p></a>
     </div>
-    <div class="nome-opc1" @init1 >
-      <a routerLink="/projetos">
-        <p class="new-projeto"><span>JU</span></p></a>
+    <div class="nome-opc1" [@init1]="reset" >
+      <a routerLink="/projetos" [ngClass]="diminui ? 'diminui-size' : '' ">
+        <p class="new-projeto"><span>{{nome2}}</span></p></a>
       </div>
-    <div class="nome-opc2" @init2 >
-      <a routerLink="/contato">
-        <p class="new-contato"><span>NO</span></p></a>
+    <div class="nome-opc2" [@init2]="reset">
+      <a routerLink="/contato" [ngClass]="diminui ? 'diminui-size' : '' ">
+        <p class="new-contato"><span>{{nome3}}</span></p></a>
+      </div>
+    </div>
+    <div [@.disabled]="isDisabled" *ngIf="mostraAviso">
+      <div class="aviso" [@fade]="state" (@fade.done)="onDone($event)" >
+        <p> Toque aqui</p>
       </div>
     </div>
 </section>
+

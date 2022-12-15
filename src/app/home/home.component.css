@@ -77,6 +77,7 @@ a{
     background-position: 130% 50%;
     background-repeat: no-repeat;
   }
+
   .opc{
     display: flex;
     flex-direction: column;
@@ -141,4 +142,48 @@ a{
     content: 'CONTATO';
     color: whitesmoke;
     animation:  fadein .3s;
+  }
+
+
+  @media (max-width: 480px){
+    .opc{
+      width: 1rem;
+      margin-left: 4rem;
+      padding-top: 4rem;
+    }
+    a{
+      font-size: 5rem;
+      padding-bottom: 4rem;
+    }
+    span{
+      display: block;
+      width: 20rem;
+    }
+    .secao{
+      width: 100vw;
+      height: 100vh;
+      background-image: url(../../assets/sung.jpg);
+      background-color: rgb(221,221,221);
+      background-position: 50% 40%;
+      background-repeat: no-repeat;
+    }
+    .aviso{
+      position: absolute;
+      color: black;
+      border-radius: 25px;
+      padding: .8rem;
+      margin-left: 35%;
+      margin-top: 15rem;
+      opacity: .8;
+      background-color: rgb(221,221,221);
+    }
+
+    .diminui-size{
+      font-size: 3.5rem;
+      padding: 0;
+    }
+    .opc-novo-size{
+      margin-left: 2rem;
+      gap: 2rem;
+    }
   }

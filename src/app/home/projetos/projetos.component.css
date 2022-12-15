@@ -71,3 +71,50 @@
   border-radius: 24px;
   margin-bottom: -0.3rem;
 }
+
+@media  (max-width: 480px){
+  .projeto-cards{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    box-shadow:0px 6px 64px rgba(112, 144, 176, 0.1);
+    width: 70%;
+    height: auto;
+    border-radius: 24px;
+  }
+  .projeto-gerenciador{
+    display: none;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-titulo{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding: 0rem;
+  }
+
+  .card-descricao{
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    width: 70%;
+  }
+  .card-link{
+    padding: 0;
+    margin: 0;
+  }
+
+  .tec-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:0 0 1rem 0;
+  }
+}

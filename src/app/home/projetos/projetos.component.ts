@@ -5,14 +5,47 @@ import { animate, style, transition, trigger } from '@angular/animations';
   selector: 'app-projetos',
   templateUrl: './projetos.component.html',
   styleUrls: ['./projetos.component.css'],
-  animations:[trigger('fadeIn',[
-    transition(':enter',[
-      style({
-        opacity: 0,
-      }),
-      animate('.3s ease-in', style({opcity:1}))
-    ])
-  ])]
+  animations:[
+    trigger('init',[
+      transition(':enter',[
+        style({
+          opacity: 0,
+          transform: 'translateX(-3rem)'
+        }),
+          animate('.3s'),
+          style({
+            opacity:1,
+            transform: 'none'
+          })
+        ])
+    ]),
+    trigger('init1',[
+      transition(':enter',[
+        style({
+          opacity: 0,
+          transform: 'translateX(-3rem)'
+        }),
+          animate('.2s .2s'),
+          style({
+            opacity:1,
+            transform: 'none'
+          })
+        ])
+    ]),
+    trigger('init2',[
+      transition(':enter',[
+        style({
+          opacity: 0,
+          transform: 'translateX(-3rem)'
+        }),
+          animate('.2s .4s'),
+          style({
+            opacity:1,
+            transform: 'none'
+          })
+        ])
+    ]),
+]
 })
 export class ProjetosComponent implements OnInit {
 

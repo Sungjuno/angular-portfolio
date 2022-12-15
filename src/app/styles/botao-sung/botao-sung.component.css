@@ -2,10 +2,12 @@ a{
     position: fixed;
     text-decoration: none;
     font-size:1.2rem;
-    margin-left: 80%;
+    margin-left: 70%;
     color: black;
     padding: .5rem;
     border-radius: 10px;
+    background-color: rgb(221,221,221);
+    opacity: .9;
   }
   a:hover{
     transition: .3s;
