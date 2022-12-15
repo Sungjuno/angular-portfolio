@@ -18,13 +18,35 @@ p{
   width: 45%;
   margin-top: 2rem;
   /* margin-left: 20rem; */
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.p1{
+  width: 45%;
+  margin-top: 2rem;
+  /* margin-left: 20rem; */
   font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: rgb(150, 36, 36);
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 @media (max-width: 480px){
-  p{
+  .p1{
     width:80%;
     font-size: 1.2rem;
+    line-height: 1.8rem
+  }
+  p{
+    width:80%;
+    font-size: 1rem;
     line-height: 1.8rem
   }
   .botao-sung{

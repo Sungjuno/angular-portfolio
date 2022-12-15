@@ -21,17 +21,17 @@
   <app-contato></app-contato>
 </section> -->
 
-<section class="secao" >
+<!-- <section class="secao" >
   <div class="opc" [ngClass]="diminui ? 'opc-novo-size':'' ">
-    <div class="nome-opc" [@init]="reset" >
+    <div class="nome-opc" [@init]="reset ? 'start': 'end'" >
       <a routerLink="/about" [ngClass]="diminui ? 'diminui-size' : '' ">
         <p class="new-sobre"><span>{{nome1}}</span></p></a>
     </div>
-    <div class="nome-opc1" [@init1]="reset" >
+    <div class="nome-opc1" [@init1]="reset ? 'start': 'end'" >
       <a routerLink="/projetos" [ngClass]="diminui ? 'diminui-size' : '' ">
         <p class="new-projeto"><span>{{nome2}}</span></p></a>
       </div>
-    <div class="nome-opc2" [@init2]="reset">
+    <div class="nome-opc2" [@init2]="reset ? 'start': 'end'">
       <a routerLink="/contato" [ngClass]="diminui ? 'diminui-size' : '' ">
         <p class="new-contato"><span>{{nome3}}</span></p></a>
       </div>
@@ -41,5 +41,27 @@
         <p> Toque aqui</p>
       </div>
     </div>
-</section>
+</section> -->
 
+
+<section class="secao">
+  <div class="opc" [ngClass]="fontPadding ? 'opc-novo-size':''">
+    <div class="nome-opc" [@init]="tocado ? 'start': 'end'"  >
+      <a routerLink="/about" [ngClass]="fontSizeSobre ? 'diminui-size':''">
+        <p class="new-sobre"><span>{{nome1}}</span></p></a>
+    </div>
+    <div class="nome-opc1" [@init1]="tocado ? 'start': 'end'" >
+      <a routerLink="/projetos" [ngClass]="fontSizeSobre ? 'diminui-size':''">
+        <p class="new-projeto"><span>{{nome2}}</span></p></a>
+      </div>
+    <div class="nome-opc2" [@init2]="tocado ? 'start': 'end'">
+      <a routerLink="/contato" [ngClass]="fontSizeSobre ? 'diminui-size':''">
+        <p class="new-contato"><span>{{nome3}}</span></p></a>
+      </div>
+    </div>
+    <div *ngIf="mobile">
+      <div class="aviso" [@fade]="state" (@fade.done)="onDone()" *ngIf="mostraAviso">
+        <p> Toque aqui</p>
+      </div>
+    </div>
+</section>
