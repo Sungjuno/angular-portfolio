@@ -1,48 +1,3 @@
-<!-- <section class="home" id="home">
-  <div class="bloco-intro">
-    <h5 class="pre-intro">Forward Thinker / FullStack Developer</h5>
-    <h1 class="intro">Olá, meu nome é Sung Ju No</h1>
-    <p class="intro-descricao">Amo acompanhar tudo de novidade que aparece no mundo da arte e tecnologia!
-      <br>
-      Entender as novas tendências é fundamental para nos preparar pro futuro!</p>
-    <div class="botoes">
-      <a href="https://github.com/Sungjuno" target="_blank" rel="noopener noreferrer"><button class="botao-cheio botao">Github</button></a>
-      <a href="https://www.linkedin.com/in/sung-ju-no-5887b6163/" target="_blank" rel="noopener noreferrer"><button class="botao-vazio botao">LinkedIn</button></a>
-    </div>
-  </div>
-  <div>
-    <img src="../../assets/sung.jpg" alt="" class="cropped">
-  </div>
-</section>
-<section class="secao-projetos">
-  <app-projetos></app-projetos>
-</section>
-<section>
-  <app-contato></app-contato>
-</section> -->
-
-<!-- <section class="secao" >
-  <div class="opc" [ngClass]="diminui ? 'opc-novo-size':'' ">
-    <div class="nome-opc" [@init]="reset ? 'start': 'end'" >
-      <a routerLink="/about" [ngClass]="diminui ? 'diminui-size' : '' ">
-        <p class="new-sobre"><span>{{nome1}}</span></p></a>
-    </div>
-    <div class="nome-opc1" [@init1]="reset ? 'start': 'end'" >
-      <a routerLink="/projetos" [ngClass]="diminui ? 'diminui-size' : '' ">
-        <p class="new-projeto"><span>{{nome2}}</span></p></a>
-      </div>
-    <div class="nome-opc2" [@init2]="reset ? 'start': 'end'">
-      <a routerLink="/contato" [ngClass]="diminui ? 'diminui-size' : '' ">
-        <p class="new-contato"><span>{{nome3}}</span></p></a>
-      </div>
-    </div>
-    <div [@.disabled]="isDisabled" *ngIf="mostraAviso">
-      <div class="aviso" [@fade]="state" (@fade.done)="onDone($event)" >
-        <p> Toque aqui</p>
-      </div>
-    </div>
-</section> -->
-
 
 <section class="secao">
   <div class="opc" [ngClass]="fontPadding ? 'opc-novo-size':''">
@@ -61,7 +16,8 @@
     </div>
     <div *ngIf="mobile">
       <div class="aviso" [@fade]="state" (@fade.done)="onDone()" *ngIf="mostraAviso">
-        <p> Toque aqui</p>
+        <!-- <p> Toque aqui</p> -->
+        <fa-icon [icon]="faBars" class="menu"></fa-icon>
       </div>
     </div>
 </section>

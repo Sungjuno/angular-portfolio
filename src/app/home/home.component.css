@@ -15,7 +15,6 @@
   font-size: 3rem;
   width: 30rem;
   height: 5rem;
-  font-family: 'Playfair Display', serif;
   padding-bottom: 3rem;
   color: #f4f7f5;
 }
@@ -146,6 +145,7 @@ a{
 
 
   @media (max-width: 480px){
+
     .opc{
       width: 1rem;
       margin-left: 4rem;
@@ -172,7 +172,7 @@ a{
       color: black;
       border-radius: 25px;
       padding: .8rem;
-      margin-left: 35%;
+      margin-left: 45%;
       margin-top: 15rem;
       opacity: .8;
       background-color: rgb(221,221,221);

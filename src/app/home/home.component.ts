@@ -1,5 +1,6 @@
 import { Component, OnInit,  HostListener, ElementRef  } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -46,6 +47,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.getHostDimensions();
   }
+
+  faBars = faBars
 
   nome1 = 'SUNG';
   nome2 = 'JU';
@@ -104,6 +107,7 @@ export class HomeComponent implements OnInit {
 
     }else if(this.nome1 = "SOBRE"){
       setTimeout(()=>{
+        this.mostraAviso = true
         this.nome1 = 'SUNG';
         this.nome2 = 'JU';
         this.nome3 = 'NO';

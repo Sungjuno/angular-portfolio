@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @font-face{
   font-family: 'BL Melody';
   src: url(/portfolio-ng/src/assets/BLMelody-Regular.otf) format("opentype");
@@ -11,7 +12,7 @@ body{
   background-color: rgb(221,221,221);
   margin: 0;
   /* font-family: 'BL Melody', sans-serif; */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {

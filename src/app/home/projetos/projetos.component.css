@@ -5,6 +5,7 @@
   padding: 2rem 0 2rem 0;
 }
 
+
 .secao-card{
   display: flex;
   align-items: center;
@@ -12,52 +13,90 @@
   margin-bottom: 4rem;
 }
 
-
 .projeto-cards{
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #FFFFFF;
-  box-shadow:0px 6px 64px rgba(112, 144, 176, 0.1);
-  width: 62rem;
-  height: auto;
   border-radius: 24px;
+  box-shadow: 5px 4px 4px rgba(29, 29, 29, 0.5);
 }
 
-.projeto-gerenciador{
-  width: 35rem;
-  border-radius: 24px;
-  margin-bottom: 0rem;
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.card-descricao{
-  width: 20rem;
-  padding-left: 5rem;
-  line-height: 1.8rem;
-  color: #828282;
+.img-card{
+
 }
 
 .card-titulo{
   padding-left: 5rem;
 }
 
-.card-link{
-  border: 2px solid #828282;
-  text-decoration: none;
-  margin-left: 5rem;
-  width: 8rem;
-  height: 3rem;
-  border-radius: 10px;
-  background-color: transparent;
-  cursor: pointer;
+.card-descricao{
+  width: 18rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  line-height: 1.8rem;
+  color: #828282;
 }
 
-.card-link:active{
-  background-color: black;
+.card-link{
+  padding: 1rem 1rem 1rem 1rem;
+  box-shadow: 5px 4px 4px rgba(29, 29, 29, 0.5);
+  margin-left: 5rem;
+  cursor: pointer;
+  background-color: #ececec;
+  border-radius: 10px;
+  border: none;
+  margin: .5rem 0 .5rem 5rem;
 }
 
 .tec-div{
-  padding-left: 4.5rem;
+  padding-left: 5rem;
+}
+
+.img-card{
+  width: 35rem;
+  height: 25rem;
+  background-image: url(../../../assets/projeto-gerenciador.png);
+  background-size: cover;
+  border-radius: 24px;
+}
+
+.img-card-ultima{
+  width: 35rem;
+  height: 25rem;
+  background-image: url(../../../assets/projeto-ultima.png);
+  background-size: cover;
+  border-radius: 24px;
+}
+
+.img-card-processing{
+  width: 35rem;
+  height: 25rem;
+  background-image: url(../../../assets/frame_0225.png);
+  background-size: cover;
+  background-position: 10px;
+  border-radius: 24px;
+}
+
+.img-card-portfolio{
+  width: 35rem;
+  height: 25rem;
+  background-image: url(../../../assets/portfolio.png);
+  background-size: cover;
+  background-position: 10px;
+  border-radius: 24px;
+}
+
+.card-link:hover{
+  transition: .3s;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 .tec{
@@ -83,7 +122,7 @@
     height: auto;
     border-radius: 24px;
   }
-  .projeto-gerenciador{
+  .img-fundo{
     display: none;
   }
 
@@ -96,17 +135,18 @@
   .card-titulo{
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
-    padding: 0rem;
+    font-size: 1.3rem;
+    padding: .5rem .5rem 0 .5rem;
   }
 
   .card-descricao{
     flex-wrap: wrap;
-    padding-left: 1rem;
+    padding-left: 5rem;
     width: 70%;
   }
+
   .card-link{
-    padding: 0;
+    padding: 1rem;
     margin: 0;
   }
 
