@@ -96,15 +96,12 @@
       color: black;
       border-radius: 30px;
       padding: .6rem .8rem .6rem .8rem;
-      margin-left: 10rem;
-      margin-top: 15rem;
+      margin-left: 45%;
+      margin-top: 70%;
       opacity: .8;
       background-color: rgb(221,221,221);
     }
 
-    .menu-mobile{
-      position: absolute;
-    }
 
     .diminui-size{
       font-size: 3.5rem;
