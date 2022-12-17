@@ -14,10 +14,12 @@
         <p class="new-contato"><span>{{nome3}}</span></p></a>
       </div>
     </div>
-    <div *ngIf="mobile">
+    <div *ngIf="mobile" class="menu-mobile">
       <div class="aviso" [@fade]="state" (@fade.done)="onDone()" *ngIf="mostraAviso">
-        <!-- <p> Toque aqui</p> -->
         <fa-icon [icon]="faBars" class="menu"></fa-icon>
+      </div>
+      <div class="aviso" [@fade]="state" (@fade.done)="onDone()" *ngIf="mostraX">
+        <fa-icon [icon]="faClose" class="menu"></fa-icon>
       </div>
     </div>
 </section>

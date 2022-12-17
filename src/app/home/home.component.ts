@@ -1,6 +1,8 @@
 import { Component, OnInit,  HostListener, ElementRef  } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-home',
@@ -49,6 +51,7 @@ export class HomeComponent implements OnInit {
   }
 
   faBars = faBars
+  faClose = faXmark
 
   nome1 = 'SUNG';
   nome2 = 'JU';
@@ -79,6 +82,7 @@ export class HomeComponent implements OnInit {
 
   tocado=true;
   mostraAviso = true;
+  mostraX = false;
   fontSizeSobre = false;
   fontPadding = false;
 
@@ -95,8 +99,9 @@ export class HomeComponent implements OnInit {
     }
 
     if(this.getHostDimensions() <= 480 && this.nome1=="SUNG"){
-      this.mostraAviso = false
+      this.mostraAviso = false;
       setTimeout(() => {
+        this.mostraX = true;
         this.nome1 = "SOBRE";
         this.nome2 = "PROJETOS";
         this.nome3 = "CONTATO";
@@ -106,6 +111,7 @@ export class HomeComponent implements OnInit {
       }, 300);
 
     }else if(this.nome1 = "SOBRE"){
+      this.mostraX = false
       setTimeout(()=>{
         this.mostraAviso = true
         this.nome1 = 'SUNG';
